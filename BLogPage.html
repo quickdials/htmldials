@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Font Awesome Free CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@1&display=swap" rel="stylesheet">
+  <script src="./js/main.js"></script>
+
+</head>
+
+<body>
+  <header class="second-header">
+    <div class="second-header-container">
+      <div class="second-logo">
+          <a href="index.html"> <img src="./images/logo.png" alt="Logo"></a>
+      </div>
+
+      <div class="second-search-wrapper">
+        <div class="second-location-input">
+          <img src="./images/Icon.svg" alt="" height="24px" width="24px">
+          <select>
+            <option value="">Location</option>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="bangalore">Bangalore</option>
+          </select>
+        </div>
+        <input type="text" placeholder="Search..." class="second-search-box">
+      </div>
+
+      <div class="second-nav-links">
+        <a href="index.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Business Free Listing</a>
+        <button class="second-login-btn">Login/Signup</button>
+      </div>
+
+      <button class="second-hamburger" id="second-menu-btn">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="second-mobile-sidebar" id="second-mobile-sidebar">
+    <div class="second-mobile-location-input">
+      <i class="fas fa-location-dot icon"></i>
+      <select>
+        <option value="">Location</option>
+        <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="bangalore">Bangalore</option>
+      </select>
+    </div>
+    <input type="text" placeholder="Search..." class="second-mobile-search-box">
+    <a href="index.html">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Business Free Listing</a>
+    <button class="second-mobile-login-btn">Login/Signup</button>
+  </div>
+  <!-- Header -->
+  <div class="header-blue-quickdetails text-center">
+    <div>
+      <h1 class="mb-0 hidden" style="padding-top: 10px; font-weight: 500;">News & Blog</h1>
+      <p class="mb-0 opacity-75 hidden">Recent blog Post</p>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-lg-3 col-md-4 hidden">
+        <div class="search-box-quickdetails">
+          <h5 class="mb-3">Search Here</h5>
+          <div class="input-group" style="background-color: rgba(250, 250, 250, 1);">
+            <input type="text" placeholder="Enter keywords..."
+              style="border: none; background-color: rgba(250, 250, 250, 1);">
+            <button class="btn"><img src="./images/seacrh.svg" alt="" style="margin-left: -26px;"></button>
+          </div>
+        </div>
+
+        <div class="recent-posts">
+          <h5 class="mb-3">Recent Questions</h5>
+          <div class="recent-post-item-quickdetilas">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=80&h=80&fit=crop&crop=center"
+              class="recent-post-img" alt="Post">
+            <div class="recent-post-content">
+              <div class="recent-post-meta">
+                <span><img src="./images/user 1.svg" alt=""> 10 Like</span>
+                <span><img src="./images/Mask group.svg" alt="">05 Com</span>
+              </div>
+              <h6>Digital Agency Website UI Design Landing Page</h6>
+            </div>
+          </div>
+          <div class="recent-post-item-quickdetilas">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=80&h=80&fit=crop&crop=center"
+              class="recent-post-img" alt="Post">
+            <div class="recent-post-content">
+              <div class="recent-post-meta">
+                <span><img src="./images/user 1.svg" alt=""> 10 Like</span>
+                <span><img src="./images/Mask group.svg" alt="">05 Com</span>
+              </div>
+              <h6>Modern UI Design Trends 2023</h6>
+            </div>
+          </div>
+          <div class="recent-post-item-quickdetilas">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=80&h=80&fit=crop&crop=center"
+              class="recent-post-img" alt="Post">
+            <div class="recent-post-content">
+              <div class="recent-post-meta">
+                <span><img src="./images/user 1.svg" alt=""> 12 Like</span>
+                <span><img src="./images/Mask group.svg" alt="">03 Com</span>
+              </div>
+              <h6>Tips for Better Web Collaboration</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content --> 
+      <div class="col-lg-9 col-md-8 main-content hidden">
+        <h1 class="heading-blogs-page">All blog posts</h1>
+        <div class="row">
+          <!-- Blog Post -->
+          <div class="col-lg-6 col-md-12">
+            <div class="blog-card-quickdetails">
+              <img src="./images/blogimage (1).jpg" alt="">
+              <div class="blog-card-quickdetails-body hidden">
+                <span class="category-badge hidden">1 Jan 2023</span>
+                <h3 >
+                  Bill Walsh Leadership Lessons
+                  <img src="./images/Icon wrap.svg" alt="" class="icons-arrow-image" style="width: 24px; height: 28px;">
+                </h3>
+                <p>Secrets of transforming a 2-14 team into a 3x Super Bowl champion.</p>
+                <div class="blog-meta">Last week</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="blog-card-quickdetails">
+              <img src="./images/blogimage (2).jpg" alt="">
+              <div class="blog-card-quickdetails-body">
+                <span class="category-badge hidden">1 Jan 2023</span>
+                <h3>
+                  Bill Walsh Leadership Lessons
+                  <img src="./images/Icon wrap.svg" alt="" class="icons-arrow-image" style="width: 24px; height: 28px;">
+                </h3>
+                <p>Secrets of transforming a 2-14 team into a 3x Super Bowl champion.</p>
+                <div class="blog-meta">Last week</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="blog-card-quickdetails">
+              <img src="./images/blogimage (3).jpg" alt="">
+              <div class="blog-card-quickdetails-body">
+                <span class="category-badge hidden">1 Jan 2023</span>
+                <h3>
+                  Bill Walsh Leadership Lessons
+                  <img src="./images/Icon wrap.svg" alt="" class="icons-arrow-image" style="width: 24px; height: 28px;">
+                </h3>
+                <p>Secrets of transforming a 2-14 team into a 3x Super Bowl champion.</p>
+                <div class="blog-meta">Last week</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 ">
+            <div class="blog-card-quickdetails">
+              <img src="./images/blogimage (4).jpg" alt="">
+              <div class="blog-card-quickdetails-body">
+                <span class="category-badge hidden">2 Feb 2025</span>
+                <h3>PM Mental Models <img src="./images/Icon wrap.svg" alt="" class="icons-arrow-image"
+                    style="width: 24px; height: 28px;"></h3>
+                <p>Mental models simplify complex processes or relationships.</p>
+                <div class="blog-meta">Last week</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination-container">
+        <nav aria-label="Blog pagination">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link pagination-prev" href="#"><img src="./images/arrow-left.svg" alt=""> Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item"><a class="page-link" href="#">8</a></li>
+            <li class="page-item"><a class="page-link" href="#">9</a></li>
+            <li class="page-item"><a class="page-link" href="#">10</a></li>
+            <li class="page-item">
+              <a class="page-link pagination-next" href="#">Next <img src="./images/arrow-right.svg" alt=""></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  </div>
+   <footer>
+    <div class="footer-container">
+    <div class="footer-sections">
+      <div class="footer-col">
+        <h4>Popular Categories</h4>
+        <a href="#">Carpenter</a>
+        <a href="#">Plumbers</a>
+        <a href="#">Home Cleaning</a>
+        <a href="#">Tourist Travels</a>
+        <a href="#">Packers Movers</a>
+        <a href="#">Electricians</a>
+        <a href="#">Painting</a>
+        <a href="#">Housekeeping</a>
+        <a href="#">Security Guards</a>
+        <a href="#">CCTV</a>
+         <a href="#">Job Training</a>
+        <a href="#">Schools</a>
+        <a href="#">Exam Coaching</a>
+        <a href="#">Language Classes</a>
+        <a href="#">Tuitions</a>
+        <a href="#">Placement Consultants</a>
+        <a href="#">Job Training</a>
+        <a href="#">Schools</a>
+        <a href="#">Exam Coaching</a>
+        <a href="#">Language Classes</a>
+        <a href="#">Tuitions</a>
+        <a href="#">Placement Consultants</a>
+        <a href="#">Job Training</a>
+        <a href="#">Schools</a>
+        <a href="#">Exam Coaching</a>
+        <a href="#">Language Classes</a>
+        <a href="#">Tuitions</a>
+        <a href="#">Placement Consultants</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Business Services</h4>
+        <a href="#">Patient Care</a>
+        <a href="#">AC Services</a>
+        <a href="#">Cleaning</a>
+        <a href="#">Security Guards</a>
+        <a href="#">Builders</a>
+        <a href="#">Interior Designers</a>
+        <a href="#">Painting Contractors</a>
+        <a href="#">Modular Kitchen</a>
+         <a href="#">Job Training</a>
+        <a href="#">Schools</a>
+        <a href="#">Exam Coaching</a>
+        <a href="#">Language Classes</a>
+        <a href="#">Tuitions</a>
+        <a href="#">Placement Consultants</a>
+        <a href="#">Job Training</a>
+        <a href="#">Schools</a>
+        <a href="#">Exam Coaching</a>
+        <a href="#">Language Classes</a>
+        <a href="#">Tuitions</a>
+        <a href="#">Placement Consultants</a>
+        <a href="#">Job Training</a>
+        <a href="#">Schools</a>
+        <a href="#">Exam Coaching</a>
+        <a href="#">Language Classes</a>
+        <a href="#">Tuitions</a>
+        <a href="#">Placement Consultants</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Education Training</h4>
+        <a href="#">Job Training</a>
+        <a href="#">Schools</a>
+        <a href="#">Exam Coaching</a>
+        <a href="#">Language Classes</a>
+        <a href="#">Tuitions</a>
+        <a href="#">Placement Consultants</a>
+        <a href="#">Job Training</a>
+        <a href="#">Schools</a>
+        <a href="#">Exam Coaching</a>
+        <a href="#">Language Classes</a>
+        <a href="#">Tuitions</a>
+        <a href="#">Placement Consultants</a>
+        <a href="#">Job Training</a>
+        <a href="#">Schools</a>
+        <a href="#">Exam Coaching</a>
+        <a href="#">Language Classes</a>
+        <a href="#">Tuitions</a>
+        <a href="#">Placement Consultants</a>
+         <a href="#">Job Training</a>
+        <a href="#">Schools</a>
+        <a href="#">Exam Coaching</a>
+        <a href="#">Language Classes</a>
+        <a href="#">Tuitions</a>
+        <a href="#">Placement Consultants</a>
+        <a href="#">Job Training</a>
+        <a href="#">Schools</a>
+        <a href="#">Exam Coaching</a>
+        <a href="#">Language Classes</a>
+        <a href="#">Tuitions</a>
+        <a href="#">Placement Consultants</a>
+        <a href="#">Job Training</a>
+        <a href="#">Schools</a>
+        <a href="#">Exam Coaching</a>
+        <a href="#">Language Classes</a>
+        <a href="#">Tuitions</a>
+        <a href="#">Placement Consultants</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Personal Service</h4>
+        <a href="#">Loans</a>
+        <a href="#">Medical</a>
+        <a href="#">Beauty Parlour</a>
+        <a href="#">Fitness</a>
+         <a href="#">Job Training</a>
+        <a href="#">Schools</a>
+        <a href="#">Exam Coaching</a>
+        <a href="#">Language Classes</a>
+        <a href="#">Tuitions</a>
+        <a href="#">Placement Consultants</a>
+        <a href="#">Job Training</a>
+        <a href="#">Schools</a>
+        <a href="#">Exam Coaching</a>
+        <a href="#">Language Classes</a>
+        <a href="#">Tuitions</a>
+        <a href="#">Placement Consultants</a>
+        <a href="#">Job Training</a>
+        <a href="#">Schools</a>
+        <a href="#">Exam Coaching</a>
+        <a href="#">Language Classes</a>
+        <a href="#">Tuitions</a>
+        <a href="#">Placement Consultants</a>
+      </div>
+    </div>
+
+    <div class="footer-sections">
+      <div class="footer-col">
+        <h4>Cities Of India</h4>
+        <a href="#">Delhi</a>
+        <a href="#">Mumbai</a>
+        <a href="#">Bangalore</a>
+        <a href="#">Chennai</a>
+        <a href="#">Kolkata</a>
+        <a href="#">Hyderabad</a>
+        <a href="#">Jaipur</a>
+        <a href="#">Lucknow</a>
+        <a href="#">Delhi</a>
+        <a href="#">Mumbai</a>
+        <a href="#">Bangalore</a>
+        <a href="#">Chennai</a>
+        <a href="#">Kolkata</a>
+        <a href="#">Hyderabad</a>
+        <a href="#">Jaipur</a>
+        <a href="#">Lucknow</a>
+        <a href="#">Delhi</a>
+        <a href="#">Mumbai</a>
+        <a href="#">Bangalore</a>
+        <a href="#">Chennai</a>
+        <a href="#">Kolkata</a>
+        <a href="#">Hyderabad</a>
+        <a href="#">Jaipur</a>
+        <a href="#">Lucknow</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Logo">
+        <p>Lorem ipsum dolor sit amet consectetur. Urna sem egestas sagittis mauris odio. Dui integer hac non
+          egestas quis sit eget. Pharetra consequat massa laoreet mauris. Scelerisque.</p>
+        <p> info@quickdads.com</p>
+        <div class="social-icons">
+          <a href="#"><img src="./images/footericonsimg (1).svg" alt="" height="16px" width="16px"></a>
+          <a href="#"><img src="./images/footericonsimg (2).svg" alt="" height="16px" width="16px"></a>
+          <a href="#"><img src="./images/footericonsimg (3).svg" alt="" height="16px" width="16px"></a>
+          <a href="#"><img src="./images/footericonsimg (4).svg" alt="" height="16px" width="16px"></a>
+        </div>
+      </div>
+    <div class="footer-right">
+      <div class="quick-links">
+        <h4>Quick Links</h4>
+        <a href="#">About Us</a>
+        <a href="#">Pricing</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+        <a href="#">Adverties on quickdials</a>
+
+      </div>
+
+      <div class="legal">
+        <h4>Legal Terms</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+
+      <div class="payment">
+        <h4>We Accept</h4>
+        <div class="payment-methods">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="MasterCard">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Amex_logo.svg" alt="Amex">
+        </div>
+      </div>
+    </div>
+</div>
+    <p class="copyright">© 2025 QuickDads. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
